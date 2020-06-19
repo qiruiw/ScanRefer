@@ -6,7 +6,7 @@ CONF = EasyDict()
 
 # path
 CONF.PATH = EasyDict()
-CONF.PATH.BASE = "/home/davech2y/ScanRefer/" # TODO: change this
+CONF.PATH.BASE = "/local-scratch/qiruiw/research/scan-refer/ScanRefer" # TODO: change this
 CONF.PATH.DATA = os.path.join(CONF.PATH.BASE, "data")
 CONF.PATH.SCANNET = os.path.join(CONF.PATH.DATA, "scannet")
 CONF.PATH.LIB = os.path.join(CONF.PATH.BASE, "lib")
@@ -23,10 +23,10 @@ CONF.PATH.SCANNET_META = os.path.join(CONF.PATH.SCANNET, "meta_data")
 CONF.PATH.SCANNET_DATA = os.path.join(CONF.PATH.SCANNET, "scannet_data")
 
 # data
-CONF.SCANNET_DIR =  "/mnt/canis/Datasets/ScanNet/public/v2/scans" # TODO change this
-CONF.SCANNET_FRAMES_ROOT = "/home/davech2y/frames_square/" # TODO change this
-CONF.PROJECTION = "/home/davech2y/multiview_projection_scanrefer" # TODO change this
-CONF.ENET_FEATURES_ROOT = "/home/davech2y/enet_features" # TODO change this
+CONF.SCANNET_DIR = os.path.join(CONF.PATH.BASE, "data/scannet/scans") # TODO change this
+CONF.SCANNET_FRAMES_ROOT = os.path.join(CONF.PATH.BASE, "data/frames_square") # TODO change this
+CONF.PROJECTION = os.path.join(CONF.PATH.BASE, "data/multiview_projection_scanrefer") # TODO change this
+CONF.ENET_FEATURES_ROOT = os.path.join(CONF.PATH.BASE, "data/enet_features") # TODO change this
 CONF.ENET_FEATURES_SUBROOT = os.path.join(CONF.ENET_FEATURES_ROOT, "{}") # scene_id
 CONF.ENET_FEATURES_PATH = os.path.join(CONF.ENET_FEATURES_SUBROOT, "{}.npy") # frame_id
 CONF.SCANNET_FRAMES = os.path.join(CONF.SCANNET_FRAMES_ROOT, "{}/{}") # scene_id, mode 

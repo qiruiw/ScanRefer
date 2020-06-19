@@ -1,9 +1,15 @@
+# virtual env
+venv
+
 # dataset
 data/ScanRefer*
 data/glove*
 data/scannet/scannet_data
 data/scannet/scans
 data/scannetv2_enet.pth
+data/frames_square
+data/enet_features
+data/multiview_projection_scanrefer
 
 # cache
 data/scannet/__pycache__
@@ -11,6 +17,7 @@ lib/__pycache__
 lib/pointnet2/__pycache__
 models/__pycache__
 utils/__pycache__
+.vscode
 
 # pointnet2
 lib/pointnet2/build/
