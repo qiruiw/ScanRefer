@@ -25,8 +25,8 @@ from models.refnet import RefNet
 from utils.box_util import get_3d_box, box3d_iou
 from data.scannet.model_util_scannet import ScannetDatasetConfig
 
-SCANREFER_TRAIN = json.load(open(os.path.join(CONF.PATH.DATA, "ScanRefer_filtered_train.json")))
-SCANREFER_VAL = json.load(open(os.path.join(CONF.PATH.DATA, "ScanRefer_filtered_val.json")))
+SCANREFER_TRAIN = json.load(open(os.path.join(CONF.PATH.DATA, "ScanRefer/ScanRefer_filtered_train.json")))
+SCANREFER_VAL = json.load(open(os.path.join(CONF.PATH.DATA, "ScanRefer/ScanRefer_filtered_val.json")))
 
 def get_dataloader(args, scanrefer, all_scene_list, split, config):
     dataset = ScannetReferenceDataset(
