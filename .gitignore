@@ -2,6 +2,7 @@
 venv
 
 # dataset
+data/scanrefer*
 data/ScanRefer*
 data/glove*
 data/scannet/scannet_data
